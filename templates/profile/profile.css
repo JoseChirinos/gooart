@@ -419,6 +419,9 @@ body {
 /*Styles for computers */
 
 @media (min-width: 992px) {
+  .menu-mobile {
+    display: none;
+  }
   .container-menu {
     display: inline-block;
     width: 22%;
@@ -549,9 +552,35 @@ body {
     text-align: center;
     padding: 5px 0px;
   }
-  .options-link:active, .options-link:hover , .options-link:visited {
+  .options-link:active, .options-link:hover, .options-link:visited {
     text-decoration: none;
-    color: #292929;
+  }
+  .options-link:active {
+    color: white;
+  }
+  .opt {
+    background: #292929;
+    height: 35px;
+    margin-top: 30px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 5px 0px;
+    margin-left: -60px;
+  }
+  .opt a {
+    color: white;
+  }
+  .opt:before {
+    content: '';
+    width: 35px;
+    height: 35px;
+    background: #292929;
+    position: absolute;
+    left: -35px;
+    margin-top: -5px;
+    border-right: 35px solid #292929;
+    border-top: 17.5px solid #e9eaef;
+    border-bottom: 17.5px solid #e9eaef;
   }
   .icons2 {
     width: 60px;

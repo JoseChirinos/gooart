@@ -154,13 +154,13 @@
               <span class="font-block font-midle2">Abierto en este momento <i class="font-midle ion-android-time"></i></span>
             </div>
             <div class="container-menu-2">
-              <div class="menu-options bg-ligth-gray">
-                <a href="#" class="font-midle2 color-gray options-link" ondragstart="return false" onselectstart="return false" oncontextmenu="return false">PERFIL</a>
+              <div class="opt" id="opciones1" onclick="activar(1)">
+                <a href="#" class="font-midle2 options-link color-gray" ondragstart="return false" onselectstart="return false" oncontextmenu="return false">PERFIL</a>
                 <div class="icons2"></div>
               </div>
             </div>
             <div class="container-menu-2">
-              <div class="menu-options bg-ligth-gray">
+              <div class="menu-options bg-ligth-gray" id="opciones2" onclick="activar(2)">
                 <a href="#" class="font-midle2 color-gray options-link" ondragstart="return false" onselectstart="return false" oncontextmenu="return false">COMENTARIOS</a>
                 <div class="icons2"></div>
               </div>
@@ -171,19 +171,19 @@
               <span class="font-midle color-fucsia">Nosotros...</span>
             </div>
             <div class="container-menu-2">
-              <div class="menu-options bg-ligth-gray">
+              <div class="menu-options bg-ligth-gray" id="opciones3" onclick="activar(3)">
                 <a href="#" class="font-midle2 color-gray options-link" ondragstart="return false" onselectstart="return false" oncontextmenu="return false">MIS EVENTOS</a>
                 <div class="icons2"></div>
               </div>
             </div>
             <div class="container-menu-2">
-              <div class="menu-options bg-ligth-gray">
+              <div class="menu-options bg-ligth-gray" id="opciones4" onclick="activar(4)">
                 <a href="#" class="font-midle2 color-gray options-link" ondragstart="return false" onselectstart="return false" oncontextmenu="return false">MIS EMPLEOS</a>
                 <div class="icons2"></div>
               </div>
             </div>
             <div class="container-menu-2">
-              <div class="menu-options bg-ligth-gray">
+              <div class="menu-options bg-ligth-gray" id="opciones5" onclick="activar(5)">
                 <a href="#" class="font-midle2 color-gray options-link" ondragstart="return false" onselectstart="return false" oncontextmenu="return false">MIS OFERTAS</a>
                 <div class="icons2"></div>
               </div>
@@ -201,3 +201,15 @@
 <script src="../../assets/js/genial.js"></script>
 
 </html>
+
+<script type="text/javascript">
+var a=1;
+  function activar(i) {
+    var element = document.getElementById('opciones' + i);
+    if (document.getElementsByClassName('opt')) {
+      document.getElementById('opciones'+a).className = "menu-options bg-ligth-gray";
+      element.className = "opt";
+      a=i;
+    }
+  }
+</script>
