@@ -428,6 +428,7 @@ body {
   }
   .portada-gradient {
     height: 150px;
+    padding-top: 20px;
     background-image: -webkit-linear-gradient(top, black, transparent);
     background-image: -moz-linear-gradient(top, black, transparent);
     background-image: -ms-linear-gradient(top, black, transparent);
