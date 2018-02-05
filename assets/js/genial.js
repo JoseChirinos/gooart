@@ -15,10 +15,14 @@ var Genial = function(){
 	this.addEvent = function(){
 		var event = this.mobilecheck() ? 'touchstart':'click';
 		[].forEach.call(this._genial,function(i){
-			JSON.parse(i.getAttribute('data-genial'));
-			i.addEventListener(event,function(){
-				self.handlerLike(this);
-			})
+			if(i.getAttribute('class').indexOf('genial-preview')==-1){
+				i.addEventListener(event,function(){
+					self.handlerLike(this);
+				})
+			}
+			if(JSON.parse(i.getAttribute('data-genial')).press==1){
+				self.liked(i);
+			};
 		});
 	}
 	this.handlerLike = function(el){
@@ -39,17 +43,17 @@ var Genial = function(){
 		}
 	}
 	this.liked = function(el){
-		console.log('entra al liked');
+		//console.log('entra al liked');
 		el.querySelector('.genial-left svg').style.fill = "#ff9a00";
 		el.querySelector('.genial-right').style.background = "#ff9a00";
 		el.querySelector('.genial-smile').style.transform = "rotateX(360deg)";
-		console.log(el.querySelector('.genial-smile .unliked'));
+		//console.log(el.querySelector('.genial-smile .unliked'));
 		el.querySelector('.genial-smile .unliked').style.display = "none";
-		console.log(el.querySelector('.genial-smile .liked'));
+		//console.log(el.querySelector('.genial-smile .liked'));
 		el.querySelector('.genial-smile .liked').style.display = "block";
 	}
 	this.unliked = function(el){
-		console.log('entra al unliked');
+		//console.log('entra al unliked');
 		el.querySelector('.genial-left svg').style.fill = "#a4a1a1";
 		el.querySelector('.genial-right').style.background = "#a4a1a1";
 		el.querySelector('.genial-smile').style.transform = "rotateX(0deg)";
