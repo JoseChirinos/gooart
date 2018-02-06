@@ -17,6 +17,9 @@ body {
 .text-center {
   text-align: center !important;
 }
+.text-right{
+  text-align: right !important;
+}
 
 .font-block {
   display: block;
@@ -356,14 +359,13 @@ body {
     border-bottom: 1px solid #8a8a8c40;
   }
   .container-menu-invitation {
-    height: 65px;
+    height: 75px;
     background: #292929;
     border-radius: 7px 7px 0px 0px;
     padding: 15px;
   }
   .container-menu-logo {
     height: 40px;
-    background: purple;
     margin-top: -10px;
   }
   .container-menu-invitation .container-midle {
@@ -372,7 +374,7 @@ body {
     padding: 10px;
   }
   .container-menu-invitation .container-midle span {
-    color: #ffffffc2 !important;
+    color: #e9eaeb !important;
   }
   .container-menu-search {
     padding: 10px;
