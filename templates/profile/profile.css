@@ -17,7 +17,8 @@ body {
 .text-center {
   text-align: center !important;
 }
-.text-right{
+
+.text-right {
   text-align: right !important;
 }
 
@@ -214,6 +215,10 @@ body {
   color: #db4030;
 }
 
+.youtube {
+  padding: 0px 12px;
+}
+
 .youtube:hover {
   color: #ea3f33;
   background: white;
@@ -254,6 +259,7 @@ body {
   margin-left: 10px;
   float: left;
 }
+
 @media (max-width:300px) {
   .icon-social {
     width: 33px;
@@ -265,7 +271,7 @@ body {
     border-radius: 50%;
     color: white;
     margin: 8px;
-}
+  }
 }
 
 @media (min-width:420px) {
@@ -331,6 +337,44 @@ body {
 }
 
 @media (min-width:960px) {
+  .opt {
+    background: #292929 !important;
+    height: 33px;
+    width: 97%;
+    /* border-radius: 20px; */
+    margin: 0 auto;
+    margin-left: -7px;
+    padding: 7px;
+    padding-left: 80px;
+  }
+  .opt span {
+    color: white;
+  }
+  .opt .option1 {
+    margin-right: -15px;
+  }
+  .opt:before {
+    content: '';
+    width: 23px;
+    height: 23px;
+    background: #292929;
+    position: absolute;
+    left: -9px;
+    margin-top: -2px;
+    transform: rotate(45deg);
+  }
+  .option1 {
+    float: right;
+    background: url(../../assets/images/sprite-logoo.png);
+    width: 50px;
+    height: 50px;
+    background-size: auto 50px;
+    background-position: 0px;
+    margin-top: -15px;
+    margin-right: -5px;
+    border-radius: 50%;
+    margin-bottom: 6px;
+  }
   .reset-margin1 {
     position: relative;
     padding: 0;
@@ -410,14 +454,14 @@ body {
     padding: 15px 5px;
   }
   .opciones {
-    height: 27px;
+    height: 33px;
     width: 95%;
     /* background: rebeccapurple; */
     border-radius: 20px;
     margin: 0 auto;
-    text-align: center;
+    padding: 7px;
+    padding-left: 65px;
     color: white;
-    padding: 5px;
   }
   .opciones span {
     color: #707175;
@@ -439,6 +483,7 @@ body {
     width: 150px;
     top: 100px;
     height: 150px;
+    box-shadow: 1px 1px 5px #000;
   }
   .portada-gradient {
     height: 150px;
