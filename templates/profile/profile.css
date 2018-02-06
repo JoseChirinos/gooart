@@ -159,9 +159,9 @@ body {
 
 .option {
   background: url(../../assets/images/sprite-logoo-light.png);
-  width: 70px;
-  height: 70px;
-  background-size: auto 70px;
+  width: 60px;
+  height: 60px;
+  background-size: auto 60px;
   background-position: 0px;
   margin: 0 auto;
   margin-top: 3px;
@@ -176,7 +176,7 @@ body {
 }
 
 .font-general1 {
-  font-size: 20px;
+  font-size: 17px;
   display: block;
   color: #434344;
 }
@@ -253,6 +253,19 @@ body {
 .info {
   margin-left: 10px;
   float: left;
+}
+@media (max-width:300px) {
+  .icon-social {
+    width: 33px;
+    height: 33px;
+    font-size: 24px;
+    display: inline-block;
+    text-align: center;
+    background: #424242;
+    border-radius: 50%;
+    color: white;
+    margin: 8px;
+}
 }
 
 @media (min-width:420px) {
