@@ -60,9 +60,9 @@ body {
   height: 110px;
   position: absolute;
   top: 0;
-  background-image: -webkit-linear-gradient(bottom, black, transparent);
-  background-image: -moz-linear-gradient(bottom, black, transparent);
-  background-image: -ms-linear-gradient(bottom, black, transparent);
+  background-image: -webkit-linear-gradient(bottom, #030303a8, transparent);
+  background-image: -moz-linear-gradient(bottom, #030303a8, transparent);
+  background-image: -ms-linear-gradient(bottom, #030303a8, transparent);
 }
 
 .item-info {
