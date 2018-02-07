@@ -118,6 +118,58 @@ body{
   padding: 20px 0px;
   text-align: center;
 }
+/********************************************************
+                    SEARCH COMPONENT
+********************************************************/
+.LayoutSearch{
+  background: #e9eaeb;
+  position: fixed;
+  width: 600px;
+  height: 70px;
+  z-index: 5;
+}
+.LayoutSearch-space{
+  height: 70px; /*depende del height del component Search*/
+}
+.Search{
+  position: relative;
+  width: 468px;
+  top: 15px;
+  margin: 0 auto;
+  background: #c3c3c3;
+  border-radius: 8px;
+  padding: 4px;
+}
+.Search-input,
+.Search-input:focus{
+  width: 350px;
+  height: 25px;
+  border: 0;
+  font-size: 16px;
+  color: #2d2d2d;
+  padding: 5px 90px 5px 20px;
+  background: #FFFFFF;
+  box-shadow: none;
+  border-radius: 5px;
+  user-select: none;
+  outline: none;
+}
+.Search-input::-webkit-input-placeholder { color: #7A7878; }
+.Search-input:-moz-placeholder { color: #7A7878; }
+.Search-input::-moz-placeholder { color: #7A7878; }
+.Search-input:-ms-input-placeholder { color: #7A7878; }
+
+.Search-options{
+  top: 10px;
+  right: 15px;
+  position: absolute;
+}
+.Search-options a{
+  padding: 2px 8px;
+}
+.Search-options a:first-child{
+  border-right: 1px solid #e9eaeb;
+}
 
 /********************************************************
                     ITEM COMPONENT
@@ -172,9 +224,16 @@ body{
   position: absolute;
   right: 10px;
   top: 10px;
-  background: #000000;
+  z-index: 1;
+}
+.Item-share a{
+  color: #000;
+  font-size: 18px;
+  padding: 5px 7px;
   border-radius: 50%;
-  padding: 6px 9px;
+}
+.Item-share a:hover{
+  background: #d4d4d4;
 }
 .Item-info{
   padding: 10px 20px 10px 20px;
