@@ -17,7 +17,6 @@ body {
 }
 
 .container-item-event {
-  background: #041a41;
   height: 600px;
   display: inline-block;
   width: 100%;
@@ -28,11 +27,7 @@ body {
   width: 100%;
   height: 200px;
   background: white;
-  background-image: url(../../assets/images/event-picture.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 3px;
+  border-radius: 5px;
   margin: 0 auto;
   margin-bottom: 15px;
   position: relative;
@@ -158,9 +153,11 @@ body {
   }
 }
 
-@media (min-width:650px) {
+@media (min-width:560px) {
   .item-event {
     height: 240px;
+    width: 560px;
+    margin: 0 auto;
   }
   .item-name {
     font-size: 21px;
