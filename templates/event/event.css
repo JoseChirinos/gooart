@@ -148,9 +148,6 @@ body {
     top: 57px;
     left: 25px;
   }
-  .font-genial {
-    font-size: 55px;
-  }
 }
 
 @media (min-width:560px) {
@@ -160,10 +157,14 @@ body {
     margin: 0 auto;
   }
   .item-name {
+    margin-top: 95px;
     font-size: 21px;
   }
   .item-date-day {
     font-size: 54px;
+  }
+  .item-info{
+    padding: 10px;
   }
   .item-date-month {
     display: block;
