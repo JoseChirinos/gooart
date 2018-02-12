@@ -382,7 +382,7 @@ body {
   padding: 13px;
 }
 
-.more-event-1 span {
+.more-event-1 .font-ubication {
   display: block;
   margin-top: 10px;
 }
@@ -420,6 +420,234 @@ body {
   padding: 18px 18px;
   font-size: 18px;
   font-weight: 500;
+}
+
+.info-event-fecha {
+  display: none;
+}
+
+.business-info1 {
+  display: none;
+}
+
+.info-event-map .color-blue {
+  display: none;
+}
+
+@media (min-width:600px) {
+  .container-event {
+    padding: 30px;
+  }
+  .info-event-portada {
+    height: 290px;
+  }
+  .info-event-gradient {
+    height: 290px;
+  }
+  .info-event-name {
+    font-size: 26px;
+    margin-top: 250px;
+  }
+  .font-genial {
+    font-size: 70px;
+  }
+  .ocultar {
+    display: none;
+  }
+  .info-event-fecha {
+    width: 30%;
+    height: 120px;
+    display: block;
+    float: left;
+    margin-right: 20px;
+    text-align: right;
+    color: white;
+    text-align: center;
+    padding-left: 50px;
+  }
+  .day {
+    font-size: 70px;
+    line-height: 0.9;
+    font-weight: 700;
+    color: #3163aa;
+    font-family: 'Roboto';
+  }
+  .month {
+    color: #3c8bf1;
+    font-size: 35px;
+    line-height: 0.7;
+    font-weight: 549;
+  }
+  .year {
+    color: #8cb8fb;
+    font-size: 33px;
+    font-weight: 300;
+    line-height: 1.1;
+  }
+  .info-event-map button {
+    padding: 6px;
+    border-radius: 12px;
+    font-size: 20px;
+    width: 200px;
+  }
+  .info-event-map button i {
+    font-size: 20px;
+  }
+  .info-event-2 {
+    font-size: 18px;
+  }
+  .more-event-1 {
+    padding-bottom: 100px;
+  }
+  .more-event-icon {
+    width: 70px;
+    height: 70px;
+    color: #ea3f34;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    margin-left: 35px;
+    float: left;
+  }
+  .more-event-1 .font-ubication {
+    display: block;
+    margin-top: 20px;
+    float: left;
+    font-size: 20px;
+    margin-left: 25px;
+  }
+  .more-event-map {
+    height: 260px;
+  }
+  .more-event-3 {
+    padding: 20px 35px 15px 40px;
+    font-size: 23px;
+  }
+  .more-event-logo {
+    width: 75px;
+    height: 75px;
+  }
+  .more-event-4 {
+    padding: 13px 20px;
+  }
+  .more-event-business {
+    padding: 25px 30px;
+    font-size: 17px;
+  }
+}
+
+@media (min-width:960px) {
+  .reset-margin1 {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    width: 960px;
+    float: none;
+  }
+  .container-event {
+    width: 960px;
+    padding: 0;
+    position: relative;
+    margin: 0 auto;
+    padding: 17px;
+    margin-top: 80px;
+  }
+  .info-event {
+    width: 600px;
+    display: inline-block;
+  }
+  .more-event {
+    height: auto;
+    width: 300px;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .more-event-icon {
+    float: none;
+    margin: 0 auto;
+  }
+  .more-event-1 .font-ubication {
+    float: none;
+    margin-top: 10px;
+  }
+  .more-event-1 {
+    padding: 5px;
+    padding-bottom: 20px;
+  }
+  .more-event-map {
+    height: 420px;
+    border-radius: 10px;
+  }
+  .business-info {
+    display: none;
+  }
+  .business-info1 {
+    display: block;
+    height: 310px;
+    background: #000;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .business-info1-title {
+    height: 80px;
+    padding: 15px 20px;
+    text-align: center;
+    color: #0064d1;
+    font-size: 20px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .business-info-logo {
+    height: 110px;
+    background: white;
+    width: 110px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .more-event {
+    position: absolute;
+  }
+  .business-name {
+    height: auto;
+    text-align: center;
+    color: #ababab;
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  .info-event-datos {
+    float: left;
+    padding: 10px 0px;
+  }
+  .info-event-1 {
+    height: 545px;
+  }
+  .info-event-map button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 25px;
+    text-align: center;
+    padding: 16px;
+  }
+  .info-event-map button span {
+    display: none;
+  }
+  .info-event-map button i {
+    font-size: 27px;
+    margin-right: 0px;
+    font-weight: 300;
+  }
+  .info-event-map {
+    float: left;
+    margin-left: 20px;
+    padding: 0px 10px;
+  }
+  .info-event-map .color-blue {
+    display: block;
+    margin: 0 auto;
+    font-size: 19px;
+    margin-left: 20px;
+    margin-top: 5px;
+  }
 }
 
 /* Fin Estilos Event */
