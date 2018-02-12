@@ -537,6 +537,14 @@ body {
 }
 
 @media (min-width:960px) {
+  .font-genial {
+    font-size: 60px;
+  }
+  .info-event-data {
+    text-align: left;
+    padding: 9px 35px;
+
+  }
   .reset-margin1 {
     position: relative;
     padding: 0;
