@@ -1,0 +1,17 @@
+.Nav-dummer{
+  background: #000;
+  height: 80px;
+  padding: 20px 0px;
+}
+.Nav-dummer img{
+  width: 70px;
+  margin-left: 30px;
+}
+.Nav-icon-open{
+  font-size: 26px;
+  font-weight: bold;
+  float: right;
+  color: #f09200;
+  margin-right: 20px;
+  margin-top: 10px;
+}
