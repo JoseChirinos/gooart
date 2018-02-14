@@ -223,8 +223,8 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-a, a:hover {
-  text-decoration: none;
+a,a:hover,a:visited,a:link,a:active{
+  text-decoration: none !important;
 }
 
 .color-blue {
@@ -291,10 +291,10 @@ a, a:hover {
 
 .info-event-data {
   height: 40px;
-  color: #c0c0c0;
+  color: #777777;
   text-align: center;
   padding: 9px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .font-genial {
@@ -649,7 +649,13 @@ a, a:hover {
     padding: 15px 18px;
   }
   .info-event-map a span {
-    display: none;
+    display: block;
+    margin-top: 17px;
+    width: 160px;
+    text-align: center;
+    color: #0169dc;
+    font-weight: 500;
+    margin-left: -60px;
   }
   .info-event-map a i {
     font-size: 27px;
@@ -658,17 +664,17 @@ a, a:hover {
   }
   .info-event-map {
     float: left;
-    margin-left: 20px;
+    margin-left: 30px;
     padding: 0px 10px;
     cursor: pointer;
   }
-  .info-event-map .color-blue {
+  /* .info-event-map .color-blue {
     display: block;
     margin: 0 auto;
     font-size: 19px;
     cursor: pointer;
     margin-top: 5px;
-  }
+  } */
 }
 
 /* Fin Estilos Event */
