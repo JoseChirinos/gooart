@@ -222,9 +222,11 @@ body {
   background: #eaebec;
   font-family: 'Raleway', sans-serif;
 }
-button:focus , button:hover{
-  outline: 0;
+
+a, a:hover {
+  text-decoration: none;
 }
+
 .color-blue {
   color: #317fe1;
 }
@@ -324,19 +326,20 @@ button:focus , button:hover{
   margin-top: 3px;
 }
 
-.info-event-map button {
+.info-event-map a {
   background: #0069dc;
   border: 0;
-  padding: 4px;
+  padding: 5px 20px;
   margin: 0 auto;
   border-radius: 8px;
   font-size: 15px;
   width: 150px;
   color: #d4e0f8;
   font-weight: 100;
+  cursor: pointer;
 }
 
-.info-event-map button i {
+.info-event-map a i {
   font-size: 18px;
   margin-right: 10px;
   font-weight: 600;
@@ -486,13 +489,13 @@ button:focus , button:hover{
     font-weight: 300;
     line-height: 1.1;
   }
-  .info-event-map button {
-    padding: 6px;
+  .info-event-map a {
+    padding: 6px 25px;
     border-radius: 12px;
     font-size: 20px;
     width: 200px;
   }
-  .info-event-map button i {
+  .info-event-map a i {
     font-size: 20px;
   }
   .info-event-2 {
@@ -545,7 +548,12 @@ button:focus , button:hover{
   .info-event-data {
     text-align: left;
     padding: 9px 35px;
-
+  }
+  .info-event-name {
+    font-size: 26px;
+    margin-top: 250px;
+    text-align: left;
+    margin-left: 35px;
   }
   .reset-margin1 {
     position: relative;
@@ -630,18 +638,20 @@ button:focus , button:hover{
   .info-event-1 {
     height: 545px;
   }
-  .info-event-map button {
+  .info-event-map a {
+    display: block;
     width: 60px;
     height: 60px;
+    margin: 0 auto;
     border-radius: 50%;
-    margin-left: 25px;
-    text-align: center;
-    padding: 16px;
+    /* margin-left: 25px; */
+    /* text-align: center; */
+    padding: 15px 18px;
   }
-  .info-event-map button span {
+  .info-event-map a span {
     display: none;
   }
-  .info-event-map button i {
+  .info-event-map a i {
     font-size: 27px;
     margin-right: 0px;
     font-weight: 300;
@@ -650,12 +660,13 @@ button:focus , button:hover{
     float: left;
     margin-left: 20px;
     padding: 0px 10px;
+    cursor: pointer;
   }
   .info-event-map .color-blue {
     display: block;
     margin: 0 auto;
     font-size: 19px;
-    margin-left: 20px;
+    cursor: pointer;
     margin-top: 5px;
   }
 }
