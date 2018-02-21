@@ -212,6 +212,10 @@ body {
   margin: 0;
 }
 
+.font-block {
+  display: block;
+}
+
 .container-work {
   position: relative;
   height: auto;
@@ -228,7 +232,7 @@ body {
   height: auto;
   width: 100%;
   background: white;
-  border-radius: 7px;
+  border-radius: 0px 0px 7px 7px;
   padding: 15px 15px 15px 25px;
 }
 
@@ -237,10 +241,17 @@ body {
 }
 
 .work-name {
-  display: block;
-  font-size: 18px;
   width: 100%;
-  height: 30px;
+  height: 60px;
+  border-radius: 7px 7px 0px 0px;
+  background: #142231;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+}
+
+.work-name span {
+  display: block;
 }
 
 .publication {
@@ -380,6 +391,58 @@ body {
   float: left;
 }
 
+.work-business-info-1 {
+  display: none;
+}
+
+@media (min-width:400px) {
+  .font-genial {
+    font-size: 60px;
+  }
+  .work-category {
+    height: 30px;
+    width: 52%;
+    margin-top: -12px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px 0px 0px 10px;
+    text-align: center;
+    padding: 3px;
+    float: right;
+    margin-right: -15px;
+  }
+}
+
+@media (min-width:500px) {
+  .work-category {
+    height: 37px;
+    width: 50%;
+    margin-top: -12px;
+    font-size: 19px;
+    padding: 5px;
+  }
+}
+
+@media (min-width:600px) {
+  .container-work-info, .container-work-more {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .container-work-information {
+    padding: 15px 15px 15px 30px;
+  }
+  .work-description {
+    padding: 30px;
+  }
+  .work-business-1 {
+    padding: 10px 30px;
+  }
+  .work-business {
+    height: 80px;
+    padding: 10px 20px;
+  }
+}
+
 @media (min-width:960px) {
   .reset-margin1 {
     position: relative;
@@ -388,6 +451,81 @@ body {
     width: 960px;
     float: none;
   }
+  .container-work-info {
+    margin: 0;
+    display: inline-block;
+  }
+  .container-work-more {
+    width: 360px;
+    display: inline-block;
+    position: absolute;
+  }
+  .work-business-info {
+    display: none;
+  }
+  .work-business-info-1 {
+    display: block;
+    height: 310px;
+    border-radius: 7px;
+    background: black;
+    width: 100%;
+  }
+  .business-info-title {
+    height: 80px;
+    padding: 15px 25px;
+    color: #0064d1;
+    font-size: 20px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .business-info-logo {
+    height: 110px;
+    background: white;
+    width: 110px;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+  .business-name1 {
+    height: auto;
+    text-align: center;
+    color: #ababab;
+    margin-top: 15px;
+    font-size: 15px;
+  }
+  .container-map {
+    width: 100%;
+    height: 300px;
+    background: #ccc;
+    border-radius: 7px;
+  }
+  .work-ubication-1 {
+    padding: 5px 25px;
+    margin: 10px auto;
+    height: auto;
+  }
+  .work-ubication-1 .title {
+    display: block;
+    float: none;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 8px;
+    color: #e84d9a;
+    text-align: center;
+  }
+
+.work-ubication-1 .icono {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    width: 60px;
+height: 60px;
+text-align: center;
+background: white;
+color: #e74c99;
+border-radius: 50%;
+padding: 12px;
+font-size: 35px;
+}
+
 }
 
 /* Fin Estilos work */
