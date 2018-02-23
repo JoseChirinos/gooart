@@ -1,0 +1,274 @@
+body {
+  background: #eaebec;
+}
+
+.reset-padding {
+  padding: 0;
+}
+
+.reset-margin {
+  margin: 0;
+}
+
+.truncado {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.container-offer {
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+}
+
+.container-item-offer {
+  height: 600px;
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+}
+
+.item-offer {
+  height: 160px;
+  width: 100%;
+  background: white;
+  border-radius: 7px;
+}
+
+.item-offer-picture {
+  height: 100%;
+  width: 33%;
+  background: #c2cad0;
+  border-radius: 7px 0px 0px 7px;
+  float: left;
+}
+
+.item-offer-info {
+  float: left;
+  width: 56%;
+  height: 40px;
+  padding: 0px 10px;
+  margin-top: 7px;
+}
+
+.item-offer-logo {
+  width: 33px;
+  height: 33px;
+  background: #0c7ffb;
+  border-radius: 50%;
+  margin-top: 3px;
+  float: left;
+}
+
+.item-offer-2 {
+  font-size: 10px;
+  float: left;
+  width: 70%;
+  margin-top: 5px;
+  margin-left: 4px;
+}
+
+.item-offer-business {
+  display: block;
+}
+
+.item-offer-ubication {
+  display: block;
+  width: 100%;
+  height: 20px;
+  color: #aaadb0;
+}
+
+.item-offer-name {
+  clear: both;
+  width: 100%;
+  height: auto;
+  padding: 0px 5px;
+  color: #262626;
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+.item-offer-description {
+  width: 100%;
+  height: auto;
+  padding: 0 5px;
+}
+
+.item-offer-description span {
+  display: block;
+  color: #4c4848;
+  font-size: 12px;
+}
+
+.item-offer-1 {
+  width: 90%;
+  height: 30px;
+  margin-top: 10px;
+  float: left;
+}
+
+.item-offer-3 {
+  padding: 0px 6px;
+}
+
+.first-price {
+  color: #929292;
+  text-decoration: line-through;
+}
+
+.second-price {
+  color: #0d7ffb;
+}
+
+.item-offer-3 .valido {
+  font-size: 9px;
+  display: block;
+  color: #888888;
+}
+
+.item-offer-share {
+  float: right;
+  margin-top: 10px;
+  font-size: 14px;
+  width: 14px;
+  height: auto;
+}
+
+.item-offer-share span {
+  display: block;
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+@media (min-width:340px) {
+  .item-offer-info {
+    width: 60%;
+  }
+}
+
+@media (min-width:370px) {
+  .item-offer-info {
+    width: 64%;
+  }
+}
+
+@media (min-width:400px) {
+  .item-offer-logo {
+    width: 40px;
+    height: 40px;
+  }
+  .item-offer {
+    height: 170px;
+  }
+  .item-offer-info {
+    width: 65%;
+  }
+  .item-offer-3 {
+    font-size: 16px;
+  }
+  .item-offer-3 .valido {
+    font-size: 12px;
+  }
+  .item-offer-share span {
+    font-size: 22px;
+  }
+  .item-offer-description span {
+    font-size: 13px;
+  }
+  .item-offer-name {
+    font-size: 19px;
+  }
+  .item-offer-2 {
+    font-size: 12px;
+    margin-top: 7.5px;
+  }
+}
+
+@media (min-width:440px) {
+  .item-offer-name {
+    margin-top: 50px;
+  }
+  .item-offer {
+    height: 175px;
+  }
+}
+
+@media(min-width:450px) {
+  .item-offer-name {
+    margin-top: 55px;
+  }
+  .item-offer-3 {
+    font-size: 18px;
+    margin-top: 7px;
+  }
+  .item-offer-share {
+    margin-top: 17px;
+    margin-right: 10px;
+  }
+  .item-offer-share span {
+    font-size: 26px;
+  }
+}
+
+@media (min-width:480px) {
+  .item-offer-info {
+    width: 66%;
+  }
+}
+
+@media (min-width:600px) {
+  .item-offer {
+    height: 200px;
+    width: 570px;
+    margin: 0 auto;
+  }
+  .item-offer-business {
+    display: block;
+  }
+  .item-offer-name {
+    font-size: 25px;
+  }
+  .item-offer-info {
+    height: auto;
+    padding: 8px 10px;
+    margin-top: 4px;
+  }
+  .item-offer-share {
+    margin-right: 20px;
+  }
+  .item-offer-2 {
+    width: 80%;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .item-offer-ubication {
+    display: block;
+    float: right;
+    width: auto;
+  }
+  .item-offer-business {
+    display: block;
+    float: left;
+  }
+  .item-offer-3 {
+    font-size: 20px;
+  }
+  .item-offer-3 .valido {
+    font-size: 14px;
+  }
+}
+
+@media (min-width:960px) {
+  .container-item-offer {
+    width: 600px;
+  }
+  .reset-margin1 {
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+    width: 960px;
+    float: none;
+  }
+}
