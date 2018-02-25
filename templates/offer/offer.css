@@ -298,7 +298,7 @@
  .offer-information {
    height: auto;
    width: 100%;
-   padding: 15px;
+   padding: 15px 15px 10px 15px;
  }
 
  .offer-info-picture {
@@ -377,10 +377,9 @@
  }
 
  .offer-information-more {
-   background: blue;
    width: 100%;
-   height: 200px;
-   padding: 15px;
+   height: auto;
+   padding: 10px 15px 15px 15px;
  }
 
  .offer-business {
@@ -404,21 +403,188 @@
    float: left;
    margin-left: 4px;
  }
- .offer-business-info .name{
+
+ .offer-business-info .name {
    display: block;
-    color: white;
-    margin-top: 1px;
+   color: white;
+   margin-top: 1px;
  }
-.offer-business-info .ubication{
-  display: block;
-    margin-top: -2px;
-    font-size: 12px;
-    color: #8f9497;
-}
+
+ .offer-business-info .ubication {
+   display: block;
+   margin-top: -2px;
+   font-size: 12px;
+   color: #8f9497;
+ }
+
  .offer-description {
    height: auto;
    padding: 10px 15px;
    color: #4a4040;
+   text-align: justify;
+ }
+
+ .offer-contact-info .ubication {
+   display: block;
+ }
+
+ .offer-contact {
+   width: 100%;
+   height: auto;
+   padding: 20px;
+   background: white;
+   margin: 20px 0px;
+   border-radius: 7px;
+   color: #000;
+ }
+
+ .offer-contact i {
+   display: block;
+   float: left;
+   font-size: 17px;
+   margin-right: 10px;
+ }
+
+ .offer-contact-info div {
+   margin: 8px 0px;
+   height: 20px;
+ }
+
+ .offer-contact-info div span {
+   display: block;
+   float: left;
+ }
+
+ .offer-contact-info .redondito {
+   width: 5px;
+   height: 5px;
+   background: #ccc;
+   border-radius: 50%;
+   margin: 7px 10px;
+ }
+
+ .offer-contact-icon {
+   width: 40px;
+   height: 40px;
+   margin: 0 auto;
+   text-align: center;
+   padding: 1px;
+   font-size: 33px;
+   margin-bottom: 10px;
+   color: #0051aa;
+ }
+
+ .offer-contact a {
+   display: block;
+   clear: both;
+   width: 185px;
+   height: 35px;
+   background: #226adc;
+   text-align: center;
+   border-radius: 7px;
+   font-size: 17px;
+   color: white;
+   padding: 6px 20px;
+   margin: 0 auto;
+   margin-top: 35px;
+   margin-bottom: 10px;
+ }
+
+ .offer-contact a i {
+   margin-top: 2px;
+   font-size: 20px;
+   font-weight: 600;
+ }
+
+ @media (min-width:400px) {
+   .offer-description {
+     padding: 10px 25px;
+   }
+   .offer-contact {
+     padding: 25px;
+   }
+   .offer-contact a {
+     margin-top: 25px;
+   }
+   .offer-contact-icon {
+     width: 50px;
+     height: 50px;
+     font-size: 43px;
+   }
+ }
+
+ @media (min-width:600px) {
+   .offer-information {
+     width: 570px;
+     margin: 0 auto;
+   }
+   .offer-info-picture {
+     height: 250px;
+   }
+   .offer-information-more {
+     width: 570px;
+     margin: 0 auto;
+   }
+   .offer-info-name {
+     color: white;
+     margin-top: -45px;
+     font-size: 28px;
+     font-weight: 300;
+   }
+   .offer-description .valido {
+     margin-top: -140px;
+     text-align: center;
+     width: 100%;
+   }
+   .offer-genial {
+     margin-top: 130px;
+     margin-bottom: 20px;
+   }
+   .offer-price {
+     width: 30%;
+     height: auto;
+     margin-top: 20px;
+     float: left;
+   }
+   .font-genial {
+     font-size: 58px;
+   }
+   .offer-price .first-price {
+     width: 100%;
+     border-right: 0;
+     font-size: 27px;
+     margin-left: 10px;
+     text-align: center;
+   }
+   .offer-price .second-price {
+     width: 50%;
+     text-align: center;
+     font-size: 40px;
+     font-weight: 700;
+   }
+   .offer-price span {
+     font-size: 35px;
+     font-weight: 600;
+     margin-left: -3px;
+   }
+   .offer-description span {
+     float: right;
+     width: 70%;
+     margin-top: 30px;
+   }
+   .offer-business {
+     height: 50px;
+     padding: 8px;
+   }
+   .offer-business-info{
+     width: 90%;
+   }
+   .offer-business-info  .name{
+     float: left;
+     margin-left: 10px;
+     margin-top: 7px;
+     font-size: 14px;
+   }
  }
 
  @media (min-width:960px) {
