@@ -458,7 +458,7 @@
  .offer-contact-info .redondito {
    width: 5px;
    height: 5px;
-   background: #ccc;
+   background: #7c7995;
    border-radius: 50%;
    margin: 7px 10px;
  }
@@ -576,14 +576,42 @@
      height: 50px;
      padding: 8px;
    }
-   .offer-business-info{
+   .offer-business-info {
      width: 90%;
    }
-   .offer-business-info  .name{
+   .offer-business-info .name {
      float: left;
      margin-left: 10px;
      margin-top: 7px;
      font-size: 14px;
+   }
+   .offer-business-info .ubication {
+     float: left;
+     margin-top: 9px;
+     margin-left: 10px;
+     font-size: 12px;
+   }
+   .offer-contact-icon {
+     float: left;
+     width: 90px;
+     height: 90px;
+     text-align: center;
+     font-size: 70px;
+   }
+   .offer-contact-info {
+     float: left;
+     margin-left: 20px;
+     margin-top: 20px;
+     font-size: 16px;
+   }
+   .offer-contact {
+     padding: 15px 30px;
+   }
+   .offer-contact a {
+     width: 200px;
+     height: 40px;
+     padding: 7px 30px;
+     font-size: 18px;
    }
  }
 
