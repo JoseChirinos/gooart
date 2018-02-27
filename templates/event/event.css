@@ -223,7 +223,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-a,a:hover,a:visited,a:link,a:active{
+a, a:hover, a:visited, a:link, a:active {
   text-decoration: none !important;
 }
 
@@ -563,22 +563,24 @@ a,a:hover,a:visited,a:link,a:active{
     float: none;
   }
   .container-event {
-    width: 960px;
-    padding: 0;
     position: relative;
+    height: auto;
     margin: 0 auto;
-    padding: 17px;
-    margin-top: 80px;
+    padding: 0;
   }
   .info-event {
-    width: 600px;
+    margin: 0;
     display: inline-block;
+    padding: 10px;
+    height: auto;
+    width: 600px;
   }
   .more-event {
-    height: auto;
-    width: 300px;
+    width: 360px;
     display: inline-block;
-    margin-left: 20px;
+    position: absolute;
+    padding: 10px;
+    margin-left: 0;
   }
   .more-event-icon {
     float: none;
