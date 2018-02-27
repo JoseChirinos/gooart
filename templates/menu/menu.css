@@ -1,32 +1,80 @@
 .Nav-dummer{
   position: relative;
-  background: #000;
   height: 60px;
   padding: 15px 0px;
+}
+.Nav-head{
+  position: absolute;
+  top: 0px;
+  z-index: 10;
+  background: #272727;
+  width: 100vw;
+  height: 60px;
+  z-index: 10;
 }
 .Nav-head-img svg{
   width: 65px;
   height: 34px;
   margin-left: 25px;
-  top: 12px;
+  top: 13px;
   position: absolute;
 }
 .Nav-icon-open{
+  position: absolute;
+  top: 15px;
+  right: 20px;
   font-size: 26px;
   font-weight: bold;
   float: right;
   color: #ba238a;
-  margin-right: 20px;
-  margin-top: 0px;
 }
 .Nav-footer{
   width: 100%;
   height: 4px;
   position: absolute;
-  bottom: -2px;
+  bottom: -4px;
   background: #f3b12e;
   background: -moz-linear-gradient(left, #f3b12e 0%, #9ace8c 30%, #47a4f5 53%, #895bc3 74%, #c70a8d 95%);
   background: -webkit-linear-gradient(left, #f3b12e 0%,#9ace8c 30%,#47a4f5 53%,#895bc3 74%,#c70a8d 95%);
   background: linear-gradient(to right, #f3b12e 0%,#9ace8c 30%,#47a4f5 53%,#895bc3 74%,#c70a8d 95%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3b12e', endColorstr='#c70a8d',GradientType=1 );
+  z-index: 10;
+}
+.Nav-menu{
+  display: block;
+  position: fixed;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: #272727;
+  z-index: 9;
+}
+.Nav-menu-list{
+  margin: 0;
+  padding: 15px 5px 15px 25px;
+}
+.Nav-menu-list li,
+.Nav-menu-list li a
+{
+  padding: 10px 0px 10px 15px;
+  list-style: none;
+}
+.Nav-menu-list li a{
+  font-size: 20px;
+  color: #fff;
+}
+.Nav-menu-list li a img{
+  width: 70px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.line{
+  display: block;
+  width: 170px;
+  height: 1px;
+  margin-left: 30px;
+  background: #434343;
 }
