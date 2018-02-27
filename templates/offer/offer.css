@@ -303,6 +303,9 @@
 
  .offer-info-picture {
    background: red;
+   background-image: -webkit-linear-gradient(bottom, #302f2f99, transparent);
+   background-image: -moz-linear-gradient(bottom, #030303a8, transparent);
+   background-image: -ms-linear-gradient(bottom, #030303a8, transparent);
    border-radius: 7px 7px 0px 0px;
    height: 150px;
    width: 100%;
@@ -393,7 +396,7 @@
  .offer-business-logo {
    width: 35px;
    height: 35px;
-   background: #ccc;
+   background: white;
    border-radius: 50%;
    margin-left: 10px;
    float: left;
@@ -438,7 +441,7 @@
    color: #000;
  }
 
- .offer-contact i {
+ .offer-contact i, .offer-contact-1 i {
    display: block;
    float: left;
    font-size: 17px;
@@ -495,6 +498,21 @@
    font-size: 20px;
    font-weight: 600;
  }
+
+ .offer-ubication-1, .business-info-title, .offer-gps, .offer-contact-1 {
+   display: none;
+ }
+
+ /* .gradiente {
+   text-align: center;
+   width: 100%;
+   height: 220px;
+   position: absolute;
+   top: 0;
+   background-image: -webkit-linear-gradient(bottom, #302f2f99, transparent);
+   background-image: -moz-linear-gradient(bottom, #030303a8, transparent);
+   background-image: -ms-linear-gradient(bottom, #030303a8, transparent);
+ } */
 
  @media (min-width:400px) {
    .offer-description {
@@ -622,6 +640,110 @@
      margin: 0 auto;
      width: 960px;
      float: none;
+   }
+   .offer-information {
+     width: 600px;
+     margin: 0;
+     display: inline-block;
+   }
+   .offer-information-more {
+     margin: 0;
+     width: 360px;
+     display: inline-block;
+     position: absolute;
+   }
+   .offer-business {
+     display: block;
+     height: 310px;
+     border-radius: 7px;
+     background: black;
+     width: 100%;
+     padding: 0;
+   }
+   .offer-business-logo {
+     width: 110px;
+     height: 110px;
+     margin: 0 auto;
+     float: none;
+   }
+   .offer-business-info .name {
+     float: none;
+     text-align: center;
+     color: #ababab;
+     margin-top: 15px;
+     font-size: 15px;
+   }
+   .offer-business-info .ubication {
+     float: none;
+     text-align: center;
+     margin: 0;
+     font-size: 15px;
+     color: #ababab;
+   }
+   .business-info-title {
+     display: block;
+     height: 80px;
+     padding: 15px 25px;
+     color: #0064d1;
+     font-size: 20px;
+     border-radius: 10px 10px 0px 0px;
+     font-family: 'Raleway', sans-serif;
+   }
+   .offer-ubication-1 {
+     display: block;
+     width: 100%;
+     padding: 5px 25px;
+     margin: 10px auto;
+     height: auto;
+   }
+   .offer-ubication-1 .icono {
+     display: block;
+     float: none;
+     margin: 0 auto;
+     width: 60px;
+     height: 60px;
+     text-align: center;
+     background: white;
+     color: #e74c99;
+     border-radius: 50%;
+     padding: 12px;
+     font-size: 35px;
+   }
+   .offer-ubication-1 .title {
+     display: block;
+     float: none;
+     margin-left: 10px;
+     font-size: 20px;
+     margin-top: 8px;
+     color: #e84d9a;
+     text-align: center;
+   }
+   .offer-gps {
+     display: block;
+     width: 100%;
+     height: 300px;
+     background: #ccc;
+     border-radius: 7px;
+   }
+   .offer-contact {
+     display: none;
+   }
+   .offer-contact-1 {
+     display: block;
+     background: white;
+     width: 100%;
+     margin: 20px 0px;
+     height: 130px;
+     padding: 20px;
+     border-radius: 7px;
+   }
+   .offer-contact-icon {
+     float: left;
+     width: 100px;
+     height: 110px;
+     text-align: center;
+     font-size: 90px;
+     margin-top: -13px;
    }
  }
 
