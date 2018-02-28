@@ -5,7 +5,7 @@ body{
 .menu{
   width: 100%;
   height: 50px;
-  background: red;
+  background: #d4d4d4;
 }
 /********************************************************
                         LAYOUTS
@@ -14,9 +14,9 @@ body{
   display: block;
   width: 960px;
   margin: 0 auto;
-  background: red;
   white-space: nowrap;
   word-spacing: -4px;
+  /*background: red;*/
 
 }
 .layoutItem,
@@ -31,24 +31,41 @@ body{
 .layoutItem{
   display: inline-block;
   width: 600px;
-  background: yellow;
+  /*background: yellow;*/
 }
 .layoutFilter{
   display: inline-block;
   position: relative;
   width: 360px;
-  height: 150px;
-  background: green;
+  height: 50px;
+  /*background: green;*/
+}
+@media (max-width:420px){
+  .layoutSearch{
+    width: 100%;
+  }
+  .layoutItem{
+    display: block;
+    width: 100%;
+  }
+  .layoutFilter{
+    display: block;
+  }
+  .Filter{
+    display: block;
+    position: absolute!important;
+    top: 0!important;
+  }
 }
 /********************************************************
                     FILTER COMPONENT
 ********************************************************/
 
 .Filter{
-  width: 350px;
-  height: 150px;
+  width: 300px;
+  min-height: 430px;
   top: 50px;
-  border-radius: 5px 5px 0px 0px;
+  border-radius: 7px;
   overflow: hidden;
   position: fixed;
   border: 1px solid;
@@ -67,7 +84,91 @@ body{
 }
 .Filter-nav-title{
   color: #e9eaeb;
+  font-weight: 200;
   display: inline-block;
+}
+.Filter-presenter{
+  text-align: center;
+}
+.Filter-presenter img{
+  width: 100px;
+  height: 65px;
+  margin: 10px auto;
+}
+.Filter-presenter h5{
+  margin: 5px 0;
+  font-size: 18px;
+}
+.Filter-sub{
+  margin: 15px 30px;
+  cursor: pointer;
+}
+.Filter-sub-title{
+  padding: 0;
+  margin: 0;
+}
+.Filter-sub-name{
+  font-weight: 500;
+  color: #1d70b8;
+  background: #e9eaed;
+  padding: 15px;
+  border-radius: 7px;
+}
+.Filter-copy{
+  padding: 20px 0px;
+  text-align: center;
+}
+/********************************************************
+                    SEARCH COMPONENT
+********************************************************/
+.LayoutSearch{
+  background: #e9eaeb;
+  position: fixed;
+  width: 600px;
+  height: 70px;
+  z-index: 5;
+}
+.LayoutSearch-space{
+  height: 70px; /*depende del height del component Search*/
+}
+.Search{
+  position: relative;
+  width: 468px;
+  top: 15px;
+  margin: 0 auto;
+  background: #c3c3c3;
+  border-radius: 8px;
+  padding: 4px;
+}
+.Search-input,
+.Search-input:focus{
+  width: 350px;
+  height: 25px;
+  border: 0;
+  font-size: 16px;
+  color: #2d2d2d;
+  padding: 5px 90px 5px 20px;
+  background: #FFFFFF;
+  box-shadow: none;
+  border-radius: 5px;
+  user-select: none;
+  outline: none;
+}
+.Search-input::-webkit-input-placeholder { color: #7A7878; }
+.Search-input:-moz-placeholder { color: #7A7878; }
+.Search-input::-moz-placeholder { color: #7A7878; }
+.Search-input:-ms-input-placeholder { color: #7A7878; }
+
+.Search-options{
+  top: 10px;
+  right: 15px;
+  position: absolute;
+}
+.Search-options a{
+  padding: 2px 8px;
+}
+.Search-options a:first-child{
+  border-right: 1px solid #e9eaeb;
 }
 
 /********************************************************
@@ -112,6 +213,9 @@ body{
   background-position: center;
   background-size: cover;
 }
+.Item-picture-genial{
+
+}
 .Item-share a{
   text-decoration: none;
   color: #ffffff;
@@ -120,15 +224,30 @@ body{
   position: absolute;
   right: 10px;
   top: 10px;
-  background: #000000;
+  z-index: 1;
+}
+.Item-share a{
+  color: #000;
+  font-size: 18px;
+  padding: 5px 7px;
   border-radius: 50%;
-  padding: 6px 9px;
+}
+.Item-share a:hover{
+  background: #d4d4d4;
 }
 .Item-info{
   padding: 10px 20px 10px 20px;
   display: inline-block;
   width: 310px;
   max-height: 130px;
+}
+.Item-info-link{
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 0;
 }
 .Item-info-name{
   white-space: nowrap;
@@ -141,7 +260,6 @@ body{
   color: #71777c;
 }
 .Item-info-description{
-  position: relative;
   color: #47494a;
   height: 18px;
   width: 100%;
@@ -159,12 +277,17 @@ body{
   font-size: 12px;
 }
 .Item-info-contact{
-    margin: 4px 0px;
+  position: relative;
+  display: block;
+  margin: 4px 0px;
+  padding: 6px 0px;
+  z-index: 2;
 }
 .Item-info-contact a{
   text-decoration: none;
   color: #000;
   font-size: 12px;
+  padding: 10px 0px;
 }
 .Item-info-contact span{
   font-size: 16px;
@@ -218,6 +341,7 @@ body{
     width: 100%;
     overflow: auto;
     padding: 10px;
+    min-height: 175px;
   }
   .Item-picture{
     display: block;
