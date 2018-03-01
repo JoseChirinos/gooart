@@ -238,7 +238,8 @@ a, a:hover, a:visited, a:link, a:active {
 .reset-margin {
   margin: 0;
 }
-.location{
+
+.location {
   display: none;
 }
 
@@ -251,7 +252,7 @@ a, a:hover, a:visited, a:link, a:active {
   padding: 10px;
 }
 
-.info-event-1 {
+.event-info-detail {
   width: 100%;
   height: auto;
   background: white;
@@ -348,7 +349,7 @@ a, a:hover, a:visited, a:link, a:active {
   font-weight: 600;
 }
 
-.info-event-2 {
+.event-info-about {
   background: #fff;
   height: auto;
   margin-top: 20px;
@@ -362,14 +363,14 @@ a, a:hover, a:visited, a:link, a:active {
   margin-bottom: 10px;
 }
 
-.more-event {
+.container-event-more {
   /* background: blue; */
   height: auto;
   margin-top: 20px;
   padding-bottom: 20px;
 }
 
-.more-event-1 {
+.event-title-ubication{
   height: auto;
   padding: 5px;
   text-align: center;
@@ -378,7 +379,7 @@ a, a:hover, a:visited, a:link, a:active {
   padding-bottom: 20px;
 }
 
-.more-event-icon {
+.event-ubication-icon {
   background: white;
   width: 85px;
   height: 85px;
@@ -395,18 +396,18 @@ a, a:hover, a:visited, a:link, a:active {
   margin-top: 10px;
 }
 
-.more-event-map {
+.event-map {
   height: 180px;
   background: #ccc;
 }
 
-.more-event-3 {
+.event-business-title {
   height: auto;
   padding: 20px 25px 15px 25px;
   font-size: 18px;
 }
 
-.more-event-4 {
+.event-business {
   background: white;
   height: 100px;
   border-radius: 10px;
@@ -469,20 +470,20 @@ a, a:hover, a:visited, a:link, a:active {
     text-align: center;
     padding-left: 50px;
   }
-  .day {
+  .info-day{
     font-size: 70px;
     line-height: 0.9;
     font-weight: 700;
     color: #3163aa;
     font-family: 'Roboto';
   }
-  .month {
+  .info-month {
     color: #3c8bf1;
     font-size: 35px;
     line-height: 0.7;
     font-weight: 549;
   }
-  .year {
+  .info-year {
     color: #8cb8fb;
     font-size: 33px;
     font-weight: 300;
@@ -497,13 +498,13 @@ a, a:hover, a:visited, a:link, a:active {
   .info-event-map a i {
     font-size: 20px;
   }
-  .info-event-2 {
+  .event-info-about {
     font-size: 18px;
   }
-  .more-event-1 {
+  .event-title-ubication{
     padding-bottom: 100px;
   }
-  .more-event-icon {
+  .event-ubication-icon {
     width: 70px;
     height: 70px;
     color: #ea3f34;
@@ -513,17 +514,17 @@ a, a:hover, a:visited, a:link, a:active {
     margin-left: 35px;
     float: left;
   }
-  .more-event-1 .font-ubication {
+  .event-title-ubication.font-ubication {
     display: block;
     margin-top: 20px;
     float: left;
     font-size: 20px;
     margin-left: 25px;
   }
-  .more-event-map {
+  .event-map {
     height: 260px;
   }
-  .more-event-3 {
+  .event-business-title {
     padding: 20px 35px 15px 40px;
     font-size: 23px;
   }
@@ -531,7 +532,7 @@ a, a:hover, a:visited, a:link, a:active {
     width: 75px;
     height: 75px;
   }
-  .more-event-4 {
+  .event-business {
     padding: 13px 20px;
   }
   .more-event-business {
@@ -566,35 +567,36 @@ a, a:hover, a:visited, a:link, a:active {
     height: auto;
     margin: 0 auto;
     padding: 0;
+    width: 100%;
   }
-  .info-event {
+  .container-event-info {
     margin: 0;
     display: inline-block;
     padding: 10px;
     height: auto;
     width: 600px;
   }
-  .more-event {
+  .container-event-more {
     width: 360px;
     display: inline-block;
     position: absolute;
     padding: 10px;
     margin-left: 0;
   }
-  .more-event-icon {
+  .event-ubication-icon {
     float: none;
     margin: 0 auto;
   }
-  .more-event-1 .font-ubication {
+  .event-title-ubication.font-ubication {
     float: none;
     margin-top: 10px;
   }
-  .more-event-1 {
+  .event-title-ubication{
     margin-top: 315px;
     padding: 5px;
     padding-bottom: 20px;
   }
-  .more-event-4 {
+  .event-business {
     background: transparent;
     height: auto;
     padding: 0;
@@ -612,15 +614,15 @@ a, a:hover, a:visited, a:link, a:active {
     text-align: center;
     margin-top: 15px;
     font-size: 15px;
-    color:#ababab;
+    color: #ababab;
     padding: 0;
     height: auto;
   }
-  .more-event-map {
+  .event-map {
     height: 420px;
     border-radius: 10px;
   }
-  .business-info {
+  .event-business-info {
     background: #000;
     position: absolute;
     top: 0;
@@ -643,10 +645,10 @@ a, a:hover, a:visited, a:link, a:active {
     border-radius: 50%;
     margin: 0 auto;
   }
-  .more-event {
+  .container-event-more {
     position: absolute;
   }
-  .location{
+  .location {
     display: block;
   }
   .business-name {
@@ -660,7 +662,7 @@ a, a:hover, a:visited, a:link, a:active {
     float: left;
     padding: 10px 0px;
   }
-  .info-event-1 {
+  .event-info-detail {
     height: 545px;
   }
   .info-event-map a {
