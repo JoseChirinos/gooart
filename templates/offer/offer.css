@@ -295,7 +295,7 @@
    margin: 0 auto;
  }
 
- .offer-information {
+ .container-offer-info {
    height: auto;
    width: 100%;
    padding: 15px 15px 10px 15px;
@@ -371,7 +371,7 @@
    font-size: 50px;
  }
 
- .offer-information-1 {
+ .offer-info-detail {
    background: white;
    height: auto;
    width: 100%;
@@ -379,7 +379,7 @@
    padding: 0px 0px 10px 0px;
  }
 
- .offer-information-more {
+ .container-offer-more {
    width: 100%;
    height: auto;
    padding: 10px 15px 15px 15px;
@@ -442,7 +442,7 @@
    color: #000;
  }
 
- .offer-contact i, .offer-contact-1 i {
+ .offer-contact i, .offer-info-contacti {
    display: block;
    float: left;
    font-size: 17px;
@@ -500,7 +500,7 @@
    font-weight: 600;
  }
 
- .offer-ubication-1, .business-info-title, .offer-gps, .offer-contact-1 {
+ .offer-title-ubication, .offer-business-title, .offer-map, .offer-info-contact{
    display: none;
  }
 
@@ -533,14 +533,14 @@
  }
 
  @media (min-width:600px) {
-   .offer-information {
+   .container-offer-info {
      width: 570px;
      margin: 0 auto;
    }
    .offer-info-picture {
      height: 250px;
    }
-   .offer-information-more {
+   .container-offer-more {
      width: 570px;
      margin: 0 auto;
    }
@@ -642,12 +642,12 @@
      width: 960px;
      float: none;
    }
-   .offer-information {
+   .container-offer-info {
      width: 600px;
      margin: 0;
      display: inline-block;
    }
-   .offer-information-more {
+   .container-offer-more {
      margin: 0;
      width: 360px;
      display: inline-block;
@@ -681,7 +681,7 @@
      font-size: 15px;
      color: #ababab;
    }
-   .business-info-title {
+   .offer-business-title {
      display: block;
      height: 80px;
      padding: 15px 25px;
@@ -690,14 +690,14 @@
      border-radius: 10px 10px 0px 0px;
      font-family: 'Raleway', sans-serif;
    }
-   .offer-ubication-1 {
+   .offer-title-ubication {
      display: block;
      width: 100%;
      padding: 5px 25px;
      margin: 15px auto;
      height: auto;
    }
-   .offer-ubication-1 .icono {
+   .offer-title-ubication .offer-ubication-icon{
      display: block;
      float: none;
      margin: 0 auto;
@@ -710,7 +710,7 @@
      padding: 12px;
      font-size: 35px;
    }
-   .offer-ubication-1 .title {
+   .offer-title-ubication .font-ubication{
      display: block;
      float: none;
      margin-left: 10px;
@@ -719,7 +719,7 @@
      color: #e84d9a;
      text-align: center;
    }
-   .offer-gps {
+   .offer-map {
      display: block;
      width: 100%;
      height: 300px;
@@ -729,7 +729,7 @@
    .offer-contact {
      display: none;
    }
-   .offer-contact-1 {
+   .offer-info-contact{
      display: block;
      background: white;
      width: 100%;
