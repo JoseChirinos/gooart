@@ -317,7 +317,7 @@ body {
 }
 
 .container-work-more {
-  height: 200px;
+  height: auto;
   width: 100%;
   padding: 10px;
 }
@@ -390,11 +390,9 @@ body {
   border-radius: 50%;
   float: left;
 }
-
-.work-business-info-1 {
+.work-business .location{
   display: none;
 }
-
 @media (min-width:400px) {
   .font-genial {
     font-size: 60px;
@@ -461,14 +459,13 @@ body {
     position: absolute;
   }
   .work-business-info {
-    display: none;
-  }
-  .work-business-info-1 {
-    display: block;
+    background: #000;
+    position: absolute;
+    top: 0;
+    width: 94.8%;
     height: 310px;
     border-radius: 7px;
-    background: black;
-    width: 100%;
+    margin-top: 10px;
   }
   .business-info-title {
     height: 80px;
@@ -500,7 +497,36 @@ body {
   .work-ubication-1 {
     padding: 5px 25px;
     margin: 10px auto;
+    margin-top: 335px;
     height: auto;
+  }
+  .work-business-1 {
+    height: 60px;
+  }
+  .work-business {
+    background: transparent;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  .work-business span {
+    float: none;
+    color: #ababab;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 300;
+  }
+  .work-business .location{
+    display: block;
+    margin-top: 0px;
+  }
+  .work-business-logo {
+    float: none;
+    background: #fff;
+    margin: 0 auto;
+    width: 110px;
+    height: 110px;
   }
   .work-ubication-1 .title {
     display: block;
@@ -511,21 +537,19 @@ body {
     color: #e84d9a;
     text-align: center;
   }
-
-.work-ubication-1 .icono {
+  .work-ubication-1 .icono {
     display: block;
     float: none;
     margin: 0 auto;
     width: 60px;
-height: 60px;
-text-align: center;
-background: white;
-color: #e74c99;
-border-radius: 50%;
-padding: 12px;
-font-size: 35px;
-}
-
+    height: 60px;
+    text-align: center;
+    background: white;
+    color: #e74c99;
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 35px;
+  }
 }
 
 /* Fin Estilos work */
