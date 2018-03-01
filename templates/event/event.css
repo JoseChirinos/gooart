@@ -238,6 +238,9 @@ a, a:hover, a:visited, a:link, a:active {
 .reset-margin {
   margin: 0;
 }
+.location{
+  display: none;
+}
 
 .reset-padding {
   padding: 0;
@@ -431,10 +434,6 @@ a, a:hover, a:visited, a:link, a:active {
   display: none;
 }
 
-.business-info1 {
-  display: none;
-}
-
 .info-event-map .color-blue {
   display: none;
 }
@@ -591,22 +590,43 @@ a, a:hover, a:visited, a:link, a:active {
     margin-top: 10px;
   }
   .more-event-1 {
+    margin-top: 315px;
     padding: 5px;
     padding-bottom: 20px;
+  }
+  .more-event-4 {
+    background: transparent;
+    height: auto;
+    padding: 0;
+  }
+  .more-event-logo {
+    float: none;
+    width: 110px;
+    height: 110px;
+    background: #fff;
+    margin: 0 auto;
+  }
+  .more-event-business {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 15px;
+    color:#ababab;
+    padding: 0;
+    height: auto;
   }
   .more-event-map {
     height: 420px;
     border-radius: 10px;
   }
   .business-info {
-    display: none;
-  }
-  .business-info1 {
-    display: block;
-    height: 310px;
     background: #000;
-    margin-bottom: 20px;
-    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    width: 95%;
+    height: 300px;
+    border-radius: 7px;
   }
   .business-info1-title {
     height: 80px;
@@ -625,6 +645,9 @@ a, a:hover, a:visited, a:link, a:active {
   }
   .more-event {
     position: absolute;
+  }
+  .location{
+    display: block;
   }
   .business-name {
     height: auto;
