@@ -370,7 +370,7 @@ a, a:hover, a:visited, a:link, a:active {
   padding-bottom: 20px;
 }
 
-.event-title-ubication{
+.event-title-ubication {
   height: auto;
   padding: 5px;
   text-align: center;
@@ -439,6 +439,11 @@ a, a:hover, a:visited, a:link, a:active {
   display: none;
 }
 
+.font-ubication {
+  display: block;
+  margin-top: 10px;
+}
+
 @media (min-width:600px) {
   .container-event {
     padding: 30px;
@@ -470,7 +475,7 @@ a, a:hover, a:visited, a:link, a:active {
     text-align: center;
     padding-left: 50px;
   }
-  .info-day{
+  .info-day {
     font-size: 70px;
     line-height: 0.9;
     font-weight: 700;
@@ -501,8 +506,18 @@ a, a:hover, a:visited, a:link, a:active {
   .event-info-about {
     font-size: 18px;
   }
-  .event-title-ubication{
-    padding-bottom: 100px;
+  .event-title-ubication {
+    height: 105px;
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 20px;
+    /* padding-bottom: 100px; */
+  }
+  .font-ubication {
+    display: block;
+    float: left;
+    margin-top: 25px;
+    margin-left: 30px;
   }
   .event-ubication-icon {
     width: 70px;
@@ -591,7 +606,8 @@ a, a:hover, a:visited, a:link, a:active {
     float: none;
     margin-top: 10px;
   }
-  .event-title-ubication{
+  .event-title-ubication {
+    height: auto;
     margin-top: 315px;
     padding: 5px;
     padding-bottom: 20px;
@@ -694,6 +710,10 @@ a, a:hover, a:visited, a:link, a:active {
     margin-left: 30px;
     padding: 0px 10px;
     cursor: pointer;
+  }
+  .font-ubication {
+    float: none;
+    margin-top: 5px;
   }
   /* .info-event-map .color-blue {
     display: block;

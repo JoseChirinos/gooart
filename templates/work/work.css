@@ -309,7 +309,7 @@ body {
   font-size: 17px;
 }
 
-.work-info-about .font-ubication{
+.work-info-about .font-ubication {
   display: block;
   margin: px 0px;
   margin-bottom: 10px;
@@ -324,17 +324,31 @@ body {
 
 .work-title-ubication {
   width: 100%;
-  height: 50px;
+  height: 70px;
   padding: 5px 25px;
   margin-bottom: 18px;
 }
 
-.work-title-ubication .font-ubication{
+.work-ubication-icon {
   display: block;
   float: left;
-  margin-left: 10px;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  background: white;
+  color: #e74c99;
+  border-radius: 50%;
+  padding: 12px;
+  font-size: 35px;
+}
+
+.work-title-ubication .font-ubication {
+  display: block;
+  float: left;
+  margin-left: 30px;
   font-size: 18px;
-  margin-top: 8px;
+  margin-top: 20px;
   color: #e84d9a;
 }
 
@@ -351,7 +365,7 @@ body {
   font-size: 30px;
 }
 
-.work-map{
+.work-map {
   width: 100%;
   height: 180px;
   background: #ccc;
@@ -390,9 +404,11 @@ body {
   border-radius: 50%;
   float: left;
 }
-.work-business .location{
+
+.work-business .location {
   display: none;
 }
+
 @media (min-width:400px) {
   .font-genial {
     font-size: 60px;
@@ -488,7 +504,7 @@ body {
     margin-top: 15px;
     font-size: 15px;
   }
-  .work-map{
+  .work-map {
     width: 100%;
     height: 300px;
     background: #ccc;
@@ -517,7 +533,7 @@ body {
     font-size: 15px;
     font-weight: 300;
   }
-  .work-business .location{
+  .work-business .location {
     display: block;
     margin-top: 0px;
   }
@@ -528,7 +544,7 @@ body {
     width: 110px;
     height: 110px;
   }
-  .work-title-ubication .font-ubication{
+  .work-title-ubication .font-ubication {
     display: block;
     float: none;
     margin-left: 10px;
