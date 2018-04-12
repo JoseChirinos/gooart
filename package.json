@@ -11,5 +11,8 @@
     "gooart"
   ],
   "author": "OpenRedBolivia",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "npm": "^5.7.1"
+  }
 }
